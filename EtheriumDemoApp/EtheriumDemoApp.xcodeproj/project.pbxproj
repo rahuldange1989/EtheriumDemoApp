@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F6EDC7623F02B700078243C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6EDC7523F02B700078243C /* AppDelegate.swift */; };
+		5F6EDC7823F02B700078243C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6EDC7723F02B700078243C /* SceneDelegate.swift */; };
+		5F6EDC7A23F02B700078243C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6EDC7923F02B700078243C /* SetupViewController.swift */; };
+		5F6EDC7D23F02B700078243C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6EDC7B23F02B700078243C /* Main.storyboard */; };
+		5F6EDC7F23F02B740078243C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6EDC7E23F02B740078243C /* Assets.xcassets */; };
+		5F6EDC8223F02B740078243C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6EDC8023F02B740078243C /* LaunchScreen.storyboard */; };
+		FA90C6DFF84342DDA0589590 /* Pods_EtheriumDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E307F7049C836D6EF8D7028 /* Pods_EtheriumDemoApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39897E2012B69BA3C6C13C02 /* Pods-EtheriumDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtheriumDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtheriumDemoApp/Pods-EtheriumDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		3EC751ABEB3185FAF458537F /* Pods-EtheriumDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtheriumDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtheriumDemoApp/Pods-EtheriumDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4E307F7049C836D6EF8D7028 /* Pods_EtheriumDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtheriumDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6EDC7223F02B700078243C /* EtheriumDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EtheriumDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6EDC7523F02B700078243C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F6EDC7723F02B700078243C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5F6EDC7923F02B700078243C /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		5F6EDC7C23F02B700078243C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F6EDC7E23F02B740078243C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F6EDC8123F02B740078243C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F6EDC8323F02B740078243C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F6EDC6F23F02B700078243C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA90C6DFF84342DDA0589590 /* Pods_EtheriumDemoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15DD85449F5BBD0809778412 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EC751ABEB3185FAF458537F /* Pods-EtheriumDemoApp.debug.xcconfig */,
+				39897E2012B69BA3C6C13C02 /* Pods-EtheriumDemoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F6EDC6923F02B700078243C = {
+			isa = PBXGroup;
+			children = (
+				5F6EDC7423F02B700078243C /* EtheriumDemoApp */,
+				5F6EDC7323F02B700078243C /* Products */,
+				15DD85449F5BBD0809778412 /* Pods */,
+				D82C6D6DA3C69A813DB70682 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5F6EDC7323F02B700078243C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F6EDC7223F02B700078243C /* EtheriumDemoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F6EDC7423F02B700078243C /* EtheriumDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				5F6EDC8C23F02C990078243C /* Verification */,
+				5F6EDC8B23F02C920078243C /* Signing */,
+				5F6EDC8A23F02C740078243C /* Account */,
+				5F6EDC8923F02C550078243C /* Setup */,
+				5F6EDC7523F02B700078243C /* AppDelegate.swift */,
+				5F6EDC7723F02B700078243C /* SceneDelegate.swift */,
+				5F6EDC7B23F02B700078243C /* Main.storyboard */,
+				5F6EDC7E23F02B740078243C /* Assets.xcassets */,
+				5F6EDC8023F02B740078243C /* LaunchScreen.storyboard */,
+				5F6EDC8323F02B740078243C /* Info.plist */,
+			);
+			path = EtheriumDemoApp;
+			sourceTree = "<group>";
+		};
+		5F6EDC8923F02C550078243C /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				5F6EDC7923F02B700078243C /* SetupViewController.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		5F6EDC8A23F02C740078243C /* Account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		5F6EDC8B23F02C920078243C /* Signing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Signing;
+			sourceTree = "<group>";
+		};
+		5F6EDC8C23F02C990078243C /* Verification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Verification;
+			sourceTree = "<group>";
+		};
+		D82C6D6DA3C69A813DB70682 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E307F7049C836D6EF8D7028 /* Pods_EtheriumDemoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F6EDC7123F02B700078243C /* EtheriumDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F6EDC8623F02B740078243C /* Build configuration list for PBXNativeTarget "EtheriumDemoApp" */;
+			buildPhases = (
+				84AB91D7F0D4B345C029A1E7 /* [CP] Check Pods Manifest.lock */,
+				5F6EDC6E23F02B700078243C /* Sources */,
+				5F6EDC6F23F02B700078243C /* Frameworks */,
+				5F6EDC7023F02B700078243C /* Resources */,
+				9A34ACEFF6D06211002E2CB0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EtheriumDemoApp;
+			productName = EtheriumDemoApp;
+			productReference = 5F6EDC7223F02B700078243C /* EtheriumDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F6EDC6A23F02B700078243C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Rahul Dange";
+				TargetAttributes = {
+					5F6EDC7123F02B700078243C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5F6EDC6D23F02B700078243C /* Build configuration list for PBXProject "EtheriumDemoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F6EDC6923F02B700078243C;
+			productRefGroup = 5F6EDC7323F02B700078243C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F6EDC7123F02B700078243C /* EtheriumDemoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F6EDC7023F02B700078243C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6EDC8223F02B740078243C /* LaunchScreen.storyboard in Resources */,
+				5F6EDC7F23F02B740078243C /* Assets.xcassets in Resources */,
+				5F6EDC7D23F02B700078243C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84AB91D7F0D4B345C029A1E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EtheriumDemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A34ACEFF6D06211002E2CB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EtheriumDemoApp/Pods-EtheriumDemoApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtheriumDemoApp/Pods-EtheriumDemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F6EDC6E23F02B700078243C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6EDC7A23F02B700078243C /* SetupViewController.swift in Sources */,
+				5F6EDC7623F02B700078243C /* AppDelegate.swift in Sources */,
+				5F6EDC7823F02B700078243C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5F6EDC7B23F02B700078243C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F6EDC7C23F02B700078243C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F6EDC8023F02B740078243C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F6EDC8123F02B740078243C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F6EDC8423F02B740078243C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F6EDC8523F02B740078243C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F6EDC8723F02B740078243C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC751ABEB3185FAF458537F /* Pods-EtheriumDemoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53XT5T6645;
+				INFOPLIST_FILE = EtheriumDemoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.EtheriumDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F6EDC8823F02B740078243C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39897E2012B69BA3C6C13C02 /* Pods-EtheriumDemoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53XT5T6645;
+				INFOPLIST_FILE = EtheriumDemoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.EtheriumDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F6EDC6D23F02B700078243C /* Build configuration list for PBXProject "EtheriumDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F6EDC8423F02B740078243C /* Debug */,
+				5F6EDC8523F02B740078243C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F6EDC8623F02B740078243C /* Build configuration list for PBXNativeTarget "EtheriumDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F6EDC8723F02B740078243C /* Debug */,
+				5F6EDC8823F02B740078243C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F6EDC6A23F02B700078243C /* Project object */;
+}

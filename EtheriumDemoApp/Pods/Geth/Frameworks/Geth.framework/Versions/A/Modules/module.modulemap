@@ -1,0 +1,8 @@
+framework module "Geth" {
+	header "ref.h"
+    header "GEGeth.h"
+    header "GoUniverse.h"
+    header "Geth.h"
+
+    export *
+}

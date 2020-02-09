@@ -1,0 +1,25 @@
+PODS:
+  - Geth (1.5.4)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+
+DEPENDENCIES:
+  - Geth (= 1.5.4)
+  - RxCocoa
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Geth
+    - RxCocoa
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Geth: cec65936c094a569f5d13adab95d722e3acfee46
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+
+PODFILE CHECKSUM: bfda655cac92e0b7cbeb33ada9cc0e73f316d982
+
+COCOAPODS: 1.5.0

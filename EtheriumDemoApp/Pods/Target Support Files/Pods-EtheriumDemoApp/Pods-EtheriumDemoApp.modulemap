@@ -1,6 +1,0 @@
-framework module Pods_EtheriumDemoApp {
-  umbrella header "Pods-EtheriumDemoApp-umbrella.h"
-
-  export *
-  module * { export * }
-}

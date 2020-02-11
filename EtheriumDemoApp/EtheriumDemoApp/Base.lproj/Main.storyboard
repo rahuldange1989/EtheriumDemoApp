@@ -33,10 +33,194 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Setup" largeTitleDisplayMode="always" id="JDC-cC-tZh"/>
+                    <connections>
+                        <outlet property="privateKeyTextField" destination="1vV-le-afY" id="7T6-av-YrD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="102"/>
+            <point key="canvasLocation" x="977" y="102"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="8Nx-KU-hhI">
+            <objects>
+                <viewController storyboardIdentifier="AccountViewController" title="Account" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iRK-l6-yan" customClass="AccountViewController" customModule="EtheriumDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Wg-53-xDf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NdT-0W-PS7">
+                                <rect key="frame" x="15" y="103" width="384" height="224"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="-20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6la-AK-6jf">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="107"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcM-jA-w2m">
+                                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="32"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMH-gM-CPk">
+                                                <rect key="frame" x="0.0" y="-6" width="6.5" height="113"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zcM-jA-w2m" firstAttribute="height" secondItem="6la-AK-6jf" secondAttribute="height" multiplier="0.3" id="8lJ-oK-MvA"/>
+                                        </constraints>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="-70"/>
+                                        <variation key="heightClass=compact-widthClass=regular" spacing="-70"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zr0-xg-KeG">
+                                        <rect key="frame" x="0.0" y="117" width="384" height="107"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDG-JK-vfA">
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="32"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9H-e1-dZ4">
+                                                <rect key="frame" x="0.0" y="-6" width="384" height="113"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="JDG-JK-vfA" firstAttribute="height" secondItem="Zr0-xg-KeG" secondAttribute="height" multiplier="0.3" id="12N-cZ-BJF"/>
+                                        </constraints>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="-70"/>
+                                        <variation key="heightClass=compact-widthClass=regular" spacing="-70"/>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SC0-5b-fXk">
+                                <rect key="frame" x="20" y="367" width="374" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1p-9O-Icd">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        <state key="normal" title="Sign">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="d8K-EM-Sud" kind="show" id="lsJ-uI-Bzx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ank-dv-FaJ">
+                                        <rect key="frame" x="0.0" y="55" width="374" height="45"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        <state key="normal" title="Verify">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="jWT-jP-mC3" kind="show" id="Zpd-Qu-IOz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4ov-ye-AyO"/>
+                                    <constraint firstAttribute="height" constant="50" id="nY3-q3-GVT"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="nY3-q3-GVT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal">
+                                    <mask key="constraints">
+                                        <exclude reference="4ov-ye-AyO"/>
+                                        <include reference="nY3-q3-GVT"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SC0-5b-fXk" firstAttribute="top" secondItem="NdT-0W-PS7" secondAttribute="bottom" constant="40" id="2Ib-PG-SjY"/>
+                            <constraint firstItem="NdT-0W-PS7" firstAttribute="height" secondItem="7Wg-53-xDf" secondAttribute="height" multiplier="0.5" id="86g-98-Rdx"/>
+                            <constraint firstItem="SC0-5b-fXk" firstAttribute="leading" secondItem="2ar-gY-85k" secondAttribute="leading" constant="20" id="Sf9-7f-qWF"/>
+                            <constraint firstItem="NdT-0W-PS7" firstAttribute="leading" secondItem="2ar-gY-85k" secondAttribute="leading" constant="15" id="cam-18-FN4"/>
+                            <constraint firstItem="NdT-0W-PS7" firstAttribute="top" secondItem="2ar-gY-85k" secondAttribute="top" constant="15" id="fST-go-Q38"/>
+                            <constraint firstItem="2ar-gY-85k" firstAttribute="trailing" secondItem="SC0-5b-fXk" secondAttribute="trailing" constant="20" id="hbn-e8-WrH"/>
+                            <constraint firstItem="2ar-gY-85k" firstAttribute="trailing" secondItem="NdT-0W-PS7" secondAttribute="trailing" constant="15" id="laE-zT-16U"/>
+                            <constraint firstItem="NdT-0W-PS7" firstAttribute="height" secondItem="7Wg-53-xDf" secondAttribute="height" multiplier="0.25" id="oDr-vz-nAd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2ar-gY-85k"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="86g-98-Rdx"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="86g-98-Rdx"/>
+                                <exclude reference="oDr-vz-nAd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="accountAddressLabel" destination="yMH-gM-CPk" id="IBJ-qY-HDx"/>
+                        <outlet property="balanceAddressLabel" destination="W9H-e1-dZ4" id="kQ5-Rn-AxA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AAl-yN-Ohk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1707" y="102"/>
+        </scene>
+        <!--Signing-->
+        <scene sceneID="vV0-ea-bqF">
+            <objects>
+                <viewController title="Signing" id="d8K-EM-Sud" customClass="SigningViewController" customModule="EtheriumDemo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TNF-xY-3gZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0vX-kv-uSn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Signing" id="BOi-Xe-srO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNA-oU-nNx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2538" y="102"/>
+        </scene>
+        <!--Verification-->
+        <scene sceneID="ir0-Xc-5gk">
+            <objects>
+                <viewController title="Verification" id="jWT-jP-mC3" customClass="VerficationViewController" customModule="EtheriumDemo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Agz-e5-xiR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="kO8-84-2nz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Verification" id="5s8-vT-Tcl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="snf-Qn-WEI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1706" y="838"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7KK-7X-CDA">

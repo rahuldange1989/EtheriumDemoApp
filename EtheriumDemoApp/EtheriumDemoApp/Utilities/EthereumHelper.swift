@@ -26,10 +26,13 @@ class EthereumHelper {
 		web3RinkebyObj = Web3.InfuraRinkebyWeb3()
 	}
 	
-	func createKeyStore(from privateKey: String) {
+	func createKeyStore(fromPrivateKey privateKey: String) {
+		let formattedKey = privateKey.trimmingCharacters(in: .whitespacesAndNewlines)
+		guard let dataKey = Data.fromHex(formattedKey) else {
+			self.keystore = nil
+			return
+		}
 		do {
-			let formattedKey = privateKey.trimmingCharacters(in: .whitespacesAndNewlines)
-			let dataKey = Data.fromHex(formattedKey)!
 			self.keystore = try EthereumKeystoreV3(privateKey: dataKey, password: password)
 		} catch {
 			print(error.localizedDescription)
@@ -42,9 +45,9 @@ class EthereumHelper {
 	}
 	
 	func getAccountBalance() -> String {
+		guard let reqAddress = self.getAccountAddress() else { return "" }
 		do {
-			guard let reqAddress = self.getAccountAddress() else { return "" }
-			let rinkebyBalance = try web3RinkebyObj?.eth.getBalance(address: reqAddress)
+			let rinkebyBalance = try self.web3RinkebyObj?.eth.getBalance(address: reqAddress)
 			let divider: BigUInt = 1000000000000000000
 			return "\((rinkebyBalance ?? 0) / divider) Ether"
 		} catch {

@@ -13,8 +13,12 @@
 		5F6EDC7D23F02B700078243C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6EDC7B23F02B700078243C /* Main.storyboard */; };
 		5F6EDC7F23F02B740078243C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6EDC7E23F02B740078243C /* Assets.xcassets */; };
 		5F6EDC8223F02B740078243C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6EDC8023F02B740078243C /* LaunchScreen.storyboard */; };
+		5F7F5F5023F32C3A0046AEEC /* SigningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F5F4F23F32C3A0046AEEC /* SigningViewController.swift */; };
+		5F7F5F5223F32C490046AEEC /* VerficationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F5F5123F32C490046AEEC /* VerficationViewController.swift */; };
 		5FF6B62923F2B8A600ECC566 /* EthereumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF6B62823F2B8A600ECC566 /* EthereumHelper.swift */; };
 		5FF6B62B23F2BEB500ECC566 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF6B62A23F2BEB500ECC566 /* StringExtension.swift */; };
+		5FF6B62D23F2C08200ECC566 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF6B62C23F2C08200ECC566 /* Utility.swift */; };
+		5FF6B63123F2FF7C00ECC566 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF6B63023F2FF7C00ECC566 /* AccountViewController.swift */; };
 		FA90C6DFF84342DDA0589590 /* Pods_EtheriumDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E307F7049C836D6EF8D7028 /* Pods_EtheriumDemoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +26,7 @@
 		39897E2012B69BA3C6C13C02 /* Pods-EtheriumDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtheriumDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtheriumDemoApp/Pods-EtheriumDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		3EC751ABEB3185FAF458537F /* Pods-EtheriumDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtheriumDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtheriumDemoApp/Pods-EtheriumDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4E307F7049C836D6EF8D7028 /* Pods_EtheriumDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtheriumDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F6EDC7223F02B700078243C /* EtheriumDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EtheriumDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6EDC7223F02B700078243C /* EtheriumDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EtheriumDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6EDC7523F02B700078243C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F6EDC7723F02B700078243C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5F6EDC7923F02B700078243C /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
@@ -30,8 +34,12 @@
 		5F6EDC7E23F02B740078243C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F6EDC8123F02B740078243C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F6EDC8323F02B740078243C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F7F5F4F23F32C3A0046AEEC /* SigningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningViewController.swift; sourceTree = "<group>"; };
+		5F7F5F5123F32C490046AEEC /* VerficationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerficationViewController.swift; sourceTree = "<group>"; };
 		5FF6B62823F2B8A600ECC566 /* EthereumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumHelper.swift; sourceTree = "<group>"; };
 		5FF6B62A23F2BEB500ECC566 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		5FF6B62C23F2C08200ECC566 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		5FF6B63023F2FF7C00ECC566 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +76,7 @@
 		5F6EDC7323F02B700078243C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F6EDC7223F02B700078243C /* EtheriumDemoApp.app */,
+				5F6EDC7223F02B700078243C /* EtheriumDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +110,7 @@
 		5F6EDC8A23F02C740078243C /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				5FF6B63023F2FF7C00ECC566 /* AccountViewController.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -109,6 +118,7 @@
 		5F6EDC8B23F02C920078243C /* Signing */ = {
 			isa = PBXGroup;
 			children = (
+				5F7F5F4F23F32C3A0046AEEC /* SigningViewController.swift */,
 			);
 			path = Signing;
 			sourceTree = "<group>";
@@ -116,6 +126,7 @@
 		5F6EDC8C23F02C990078243C /* Verification */ = {
 			isa = PBXGroup;
 			children = (
+				5F7F5F5123F32C490046AEEC /* VerficationViewController.swift */,
 			);
 			path = Verification;
 			sourceTree = "<group>";
@@ -123,6 +134,7 @@
 		5FF6B62723F2B87300ECC566 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				5FF6B62C23F2C08200ECC566 /* Utility.swift */,
 				5FF6B62823F2B8A600ECC566 /* EthereumHelper.swift */,
 				5FF6B62A23F2BEB500ECC566 /* StringExtension.swift */,
 			);
@@ -156,7 +168,7 @@
 			);
 			name = EtheriumDemoApp;
 			productName = EtheriumDemoApp;
-			productReference = 5F6EDC7223F02B700078243C /* EtheriumDemoApp.app */;
+			productReference = 5F6EDC7223F02B700078243C /* EtheriumDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -248,8 +260,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F7F5F5223F32C490046AEEC /* VerficationViewController.swift in Sources */,
 				5F6EDC7A23F02B700078243C /* SetupViewController.swift in Sources */,
 				5F6EDC7623F02B700078243C /* AppDelegate.swift in Sources */,
+				5FF6B63123F2FF7C00ECC566 /* AccountViewController.swift in Sources */,
+				5FF6B62D23F2C08200ECC566 /* Utility.swift in Sources */,
+				5F7F5F5023F32C3A0046AEEC /* SigningViewController.swift in Sources */,
 				5FF6B62B23F2BEB500ECC566 /* StringExtension.swift in Sources */,
 				5FF6B62923F2B8A600ECC566 /* EthereumHelper.swift in Sources */,
 				5F6EDC7823F02B700078243C /* SceneDelegate.swift in Sources */,
@@ -405,7 +421,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.EtheriumDemoApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EtheriumDemo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -424,7 +440,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.EtheriumDemoApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EtheriumDemo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

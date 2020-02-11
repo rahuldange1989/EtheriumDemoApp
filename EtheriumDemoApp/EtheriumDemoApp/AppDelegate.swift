@@ -13,6 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		// -- Initialize Etherium Helper
+		EthereumHelper.sharedInstance.initialize()
+		
 		// -- Change appearance of Navigation bar
         UINavigationBar.appearance().barTintColor = .darkGray
         UINavigationBar.appearance().tintColor = .white

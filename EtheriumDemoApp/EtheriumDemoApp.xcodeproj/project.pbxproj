@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		5F6EDC7D23F02B700078243C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6EDC7B23F02B700078243C /* Main.storyboard */; };
 		5F6EDC7F23F02B740078243C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6EDC7E23F02B740078243C /* Assets.xcassets */; };
 		5F6EDC8223F02B740078243C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6EDC8023F02B740078243C /* LaunchScreen.storyboard */; };
+		5FF6B62923F2B8A600ECC566 /* EthereumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF6B62823F2B8A600ECC566 /* EthereumHelper.swift */; };
+		5FF6B62B23F2BEB500ECC566 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF6B62A23F2BEB500ECC566 /* StringExtension.swift */; };
 		FA90C6DFF84342DDA0589590 /* Pods_EtheriumDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E307F7049C836D6EF8D7028 /* Pods_EtheriumDemoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		5F6EDC7E23F02B740078243C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F6EDC8123F02B740078243C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F6EDC8323F02B740078243C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FF6B62823F2B8A600ECC566 /* EthereumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumHelper.swift; sourceTree = "<group>"; };
+		5FF6B62A23F2BEB500ECC566 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		5F6EDC7423F02B700078243C /* EtheriumDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				5FF6B62723F2B87300ECC566 /* Utilities */,
 				5F6EDC8C23F02C990078243C /* Verification */,
 				5F6EDC8B23F02C920078243C /* Signing */,
 				5F6EDC8A23F02C740078243C /* Account */,
@@ -113,6 +118,15 @@
 			children = (
 			);
 			path = Verification;
+			sourceTree = "<group>";
+		};
+		5FF6B62723F2B87300ECC566 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5FF6B62823F2B8A600ECC566 /* EthereumHelper.swift */,
+				5FF6B62A23F2BEB500ECC566 /* StringExtension.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		D82C6D6DA3C69A813DB70682 /* Frameworks */ = {
@@ -215,19 +229,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EtheriumDemoApp/Pods-EtheriumDemoApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EtheriumDemoApp/Pods-EtheriumDemoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EtheriumDemoApp/Pods-EtheriumDemoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtheriumDemoApp/Pods-EtheriumDemoApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EtheriumDemoApp/Pods-EtheriumDemoApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -239,6 +250,8 @@
 			files = (
 				5F6EDC7A23F02B700078243C /* SetupViewController.swift in Sources */,
 				5F6EDC7623F02B700078243C /* AppDelegate.swift in Sources */,
+				5FF6B62B23F2BEB500ECC566 /* StringExtension.swift in Sources */,
+				5FF6B62923F2B8A600ECC566 /* EthereumHelper.swift in Sources */,
 				5F6EDC7823F02B700078243C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,7 +400,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53XT5T6645;
 				INFOPLIST_FILE = EtheriumDemoApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.EtheriumDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -403,7 +419,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53XT5T6645;
 				INFOPLIST_FILE = EtheriumDemoApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.EtheriumDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

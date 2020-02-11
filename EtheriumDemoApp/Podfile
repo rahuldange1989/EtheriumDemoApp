@@ -8,5 +8,5 @@ target 'EtheriumDemoApp' do
   # Pods for EtheriumDemoApp
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'Geth', '1.5.4'
+  pod 'web3swift'
 end

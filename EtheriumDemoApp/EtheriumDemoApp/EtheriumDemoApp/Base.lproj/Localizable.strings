@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  EtheriumDemoApp
+
+  Created by Rahul Dange on 12/02/20.
+  Copyright © 2020 Rahul Dange. All rights reserved.
+*/
+"REQUIRED_TITLE" = "Required";
+"EMPTY_PRIVATE_KEY_MSG" = "Empty private key. Please enter valid private key.";
+"INVALID" = "Invalid"
+"INVALID_PRIVATE_KEY" = "Invalid private key."

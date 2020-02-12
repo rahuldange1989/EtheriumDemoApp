@@ -15,6 +15,7 @@
 		5F6EDC7D23F02B700078243C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6EDC7B23F02B700078243C /* Main.storyboard */; };
 		5F6EDC7F23F02B740078243C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6EDC7E23F02B740078243C /* Assets.xcassets */; };
 		5F6EDC8223F02B740078243C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6EDC8023F02B740078243C /* LaunchScreen.storyboard */; };
+		5F7198CF23F46D7B001D7D04 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F7198CD23F46D7B001D7D04 /* Localizable.strings */; };
 		5F7F5F5023F32C3A0046AEEC /* SigningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F5F4F23F32C3A0046AEEC /* SigningViewController.swift */; };
 		5F7F5F5223F32C490046AEEC /* VerficationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F5F5123F32C490046AEEC /* VerficationViewController.swift */; };
 		5FF6B62923F2B8A600ECC566 /* EthereumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF6B62823F2B8A600ECC566 /* EthereumHelper.swift */; };
@@ -38,6 +39,7 @@
 		5F6EDC7E23F02B740078243C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F6EDC8123F02B740078243C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F6EDC8323F02B740078243C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F7198CE23F46D7B001D7D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = EtheriumDemoApp/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5F7F5F4F23F32C3A0046AEEC /* SigningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningViewController.swift; sourceTree = "<group>"; };
 		5F7F5F5123F32C490046AEEC /* VerficationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerficationViewController.swift; sourceTree = "<group>"; };
 		5FF6B62823F2B8A600ECC566 /* EthereumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumHelper.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				5F6EDC7E23F02B740078243C /* Assets.xcassets */,
 				5F6EDC8023F02B740078243C /* LaunchScreen.storyboard */,
 				5F6EDC8323F02B740078243C /* Info.plist */,
+				5F7198CD23F46D7B001D7D04 /* Localizable.strings */,
 			);
 			path = EtheriumDemoApp;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F6EDC8223F02B740078243C /* LaunchScreen.storyboard in Resources */,
+				5F7198CF23F46D7B001D7D04 /* Localizable.strings in Resources */,
 				5F6EDC7F23F02B740078243C /* Assets.xcassets in Resources */,
 				5F6EDC7D23F02B700078243C /* Main.storyboard in Resources */,
 			);
@@ -297,6 +301,14 @@
 				5F6EDC8123F02B740078243C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5F7198CD23F46D7B001D7D04 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F7198CE23F46D7B001D7D04 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -27,7 +27,9 @@ class SetupViewController: UIViewController {
 			if privateKey.count > 0 {
 				self.moveToAccountVC(privateKey: privateKey)
 			} else {
-				Utility.showAlert(self, title: "Required", message: "Empty private key. Please enter valid private key.")
+				let title = NSLocalizedString("REQUIRED_TITLE", comment: "")
+				let msg = NSLocalizedString("EMPTY_PRIVATE_KEY_MSG", comment: "")
+				Utility.showAlert(self, title: title, message: msg)
 			}
 		})
 	}

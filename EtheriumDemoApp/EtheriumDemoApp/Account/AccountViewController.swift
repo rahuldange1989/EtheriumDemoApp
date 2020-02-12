@@ -34,7 +34,9 @@ class AccountViewController: UIViewController {
 		if accountAddress == nil {
 			self.view.isUserInteractionEnabled = false
 			Utility.hideActivityIndicatory((self.navigationController?.view)!)
-			Utility.showAlert(self.navigationController, title: "Invalid", message: "Invalid private key.")
+			let title = NSLocalizedString("INVALID", comment: "")
+			let msg = NSLocalizedString("INVALID_PRIVATE_KEY", comment: "")
+			Utility.showAlert(self.navigationController, title: title, message: msg)
 		} else {
 			self.accountAddressLabel.text = accountAddress?.address
 			// -- Doing below code on bakcground queue, because 'try self.web3RinkebyObj?.eth.getBalance(address: reqAddress)' this is interanlly calling wait() method

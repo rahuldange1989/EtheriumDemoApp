@@ -7,5 +7,5 @@
 */
 "REQUIRED_TITLE" = "Required";
 "EMPTY_PRIVATE_KEY_MSG" = "Empty private key. Please enter valid private key.";
-"INVALID" = "Invalid"
-"INVALID_PRIVATE_KEY" = "Invalid private key."
+"INVALID" = "Invalid";
+"INVALID_PRIVATE_KEY" = "Invalid private key.";

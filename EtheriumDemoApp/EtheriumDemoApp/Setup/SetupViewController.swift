@@ -21,7 +21,7 @@ class SetupViewController: UIViewController {
 	
 	// MARK: - Internal methods -
 	func doEventBinding() {
-		_ = self.privateKeyTextField.rx.controlEvent(.editingDidEndOnExit).subscribe(onNext: { () in
+		_ = self.privateKeyTextField.rx.controlEvent(.editingDidEndOnExit).subscribe(onNext: { [unowned self] () in
 			self.privateKeyTextField.resignFirstResponder()
 			let privateKey = self.privateKeyTextField.text ?? ""
 			if privateKey.count > 0 {

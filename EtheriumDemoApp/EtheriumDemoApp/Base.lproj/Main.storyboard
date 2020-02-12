@@ -10,7 +10,7 @@
         <!--Setup-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SetupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SetupViewController" customModule="EtheriumDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SetupViewController" customModule="EtheriumDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +44,7 @@
         <!--Account-->
         <scene sceneID="8Nx-KU-hhI">
             <objects>
-                <viewController storyboardIdentifier="AccountViewController" title="Account" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iRK-l6-yan" customClass="AccountViewController" customModule="EtheriumDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountViewController" title="Account" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iRK-l6-yan" customClass="AccountViewController" customModule="EtheriumDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Wg-53-xDf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,7 +105,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1p-9O-Icd">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
-                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Sign">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -122,7 +122,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ank-dv-FaJ">
                                         <rect key="frame" x="0.0" y="55" width="374" height="45"/>
-                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Verify">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -197,14 +197,131 @@
                     <view key="view" contentMode="scaleToFill" id="TNF-xY-3gZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7RW-qk-xrP" userLabel="Message">
+                                <rect key="frame" x="20" y="128" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="T4b-pq-Dpa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartInsertDeleteType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J94-L6-uvg">
+                                <rect key="frame" x="20" y="208" width="374" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MhM-Eb-HBA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Sign message">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Ced-Z0-HvV" kind="show" identifier="showSignatureVC" id="tjj-jT-UES"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7RW-qk-xrP" firstAttribute="leading" secondItem="0vX-kv-uSn" secondAttribute="leading" constant="20" id="290-DZ-MnC"/>
+                            <constraint firstItem="0vX-kv-uSn" firstAttribute="trailing" secondItem="J94-L6-uvg" secondAttribute="trailing" constant="20" id="5Id-aQ-Kyh"/>
+                            <constraint firstItem="7RW-qk-xrP" firstAttribute="top" secondItem="0vX-kv-uSn" secondAttribute="top" constant="40" id="90d-aU-Hmq"/>
+                            <constraint firstItem="J94-L6-uvg" firstAttribute="top" secondItem="7RW-qk-xrP" secondAttribute="bottom" constant="40" id="EyQ-Wh-OWP"/>
+                            <constraint firstItem="0vX-kv-uSn" firstAttribute="trailing" secondItem="7RW-qk-xrP" secondAttribute="trailing" constant="20" id="iiK-Br-Hf5"/>
+                            <constraint firstItem="J94-L6-uvg" firstAttribute="leading" secondItem="0vX-kv-uSn" secondAttribute="leading" constant="20" id="qRG-H0-UhV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0vX-kv-uSn"/>
                     </view>
                     <navigationItem key="navigationItem" title="Signing" id="BOi-Xe-srO"/>
+                    <connections>
+                        <outlet property="messageTextField" destination="7RW-qk-xrP" id="Lpu-kS-0U9"/>
+                        <outlet property="signMsgBtn" destination="J94-L6-uvg" id="9qQ-UX-CfE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNA-oU-nNx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2538" y="102"/>
+        </scene>
+        <!--Signature-->
+        <scene sceneID="aFN-DF-BqZ">
+            <objects>
+                <viewController id="Ced-Z0-HvV" customClass="SignatureViewController" customModule="EtheriumDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oHX-mu-WWR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="je2-SQ-ceM">
+                                <rect key="frame" x="20" y="88" width="374" height="537.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message: -" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yj0-Os-oca">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="161.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSP-Qe-JT5">
+                                        <rect key="frame" x="0.0" y="176.5" width="374" height="361"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hx4-dh-JB4">
+                                                <rect key="frame" x="62" y="55.5" width="250" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="LSo-jq-feo">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="200"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="250" id="ojk-uf-7T5">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="200"/>
+                                                    </constraint>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="hx4-dh-JB4" firstAttribute="centerX" secondItem="lSP-Qe-JT5" secondAttribute="centerX" id="7Oy-Zr-SNK"/>
+                                            <constraint firstItem="hx4-dh-JB4" firstAttribute="centerY" secondItem="lSP-Qe-JT5" secondAttribute="centerY" id="yF0-84-FcL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="yj0-Os-oca" firstAttribute="height" secondItem="je2-SQ-ceM" secondAttribute="height" multiplier="0.3" id="B8g-Zz-jmH"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal">
+                                    <mask key="constraints">
+                                        <exclude reference="B8g-Zz-jmH"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="je2-SQ-ceM" firstAttribute="height" secondItem="oHX-mu-WWR" secondAttribute="height" multiplier="0.6" id="Cde-nH-whY"/>
+                            <constraint firstItem="je2-SQ-ceM" firstAttribute="leading" secondItem="WsA-yx-wxV" secondAttribute="leading" constant="20" id="If0-MB-TrW"/>
+                            <constraint firstItem="WsA-yx-wxV" firstAttribute="trailing" secondItem="je2-SQ-ceM" secondAttribute="trailing" constant="20" id="K6F-ih-bqK"/>
+                            <constraint firstItem="je2-SQ-ceM" firstAttribute="centerX" secondItem="oHX-mu-WWR" secondAttribute="centerX" id="ehu-VM-Vrd"/>
+                            <constraint firstItem="je2-SQ-ceM" firstAttribute="top" secondItem="WsA-yx-wxV" secondAttribute="top" id="iah-J8-hyC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WsA-yx-wxV"/>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Cde-nH-whY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Signature" id="2tZ-Sy-dgg"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="yj0-Os-oca" id="lP5-Zd-Gj8"/>
+                        <outlet property="qrImageView" destination="hx4-dh-JB4" id="7GX-Kl-4ez"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xjQ-23-Qsn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3258" y="102"/>
         </scene>
         <!--Verification-->
         <scene sceneID="ir0-Xc-5gk">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jze-Vh-qkF">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController storyboardIdentifier="SetupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SetupViewController" customModule="EtheriumDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Private key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1vV-le-afY">
-                                <rect key="frame" x="20" y="128" width="374" height="40"/>
+                                <rect key="frame" x="64" y="84" width="768" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="33o-y4-eaL"/>
@@ -47,23 +47,23 @@
             <objects>
                 <viewController storyboardIdentifier="AccountViewController" title="Account" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iRK-l6-yan" customClass="AccountViewController" customModule="EtheriumDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Wg-53-xDf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NdT-0W-PS7">
-                                <rect key="frame" x="15" y="103" width="384" height="224"/>
+                                <rect key="frame" x="59" y="59" width="778" height="207"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="-20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6la-AK-6jf">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="107"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="207"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcM-jA-w2m">
-                                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="62"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMH-gM-CPk">
-                                                <rect key="frame" x="0.0" y="-6" width="6.5" height="113"/>
+                                                <rect key="frame" x="0.0" y="-26" width="6.5" height="233"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -76,16 +76,16 @@
                                         <variation key="heightClass=compact-widthClass=regular" spacing="-70"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zr0-xg-KeG">
-                                        <rect key="frame" x="0.0" y="117" width="384" height="107"/>
+                                        <rect key="frame" x="394" y="0.0" width="384" height="207"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDG-JK-vfA">
-                                                <rect key="frame" x="0.0" y="0.0" width="384" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="62"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9H-e1-dZ4">
-                                                <rect key="frame" x="0.0" y="-6" width="384" height="113"/>
+                                                <rect key="frame" x="0.0" y="-26" width="384" height="233"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -102,10 +102,10 @@
                                 <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SC0-5b-fXk">
-                                <rect key="frame" x="20" y="367" width="374" height="100"/>
+                                <rect key="frame" x="64" y="306" width="768" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1p-9O-Icd">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="379" height="50"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Sign">
@@ -122,7 +122,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ank-dv-FaJ">
-                                        <rect key="frame" x="0.0" y="55" width="374" height="45"/>
+                                        <rect key="frame" x="389" y="0.0" width="379" height="50"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Verify">
@@ -140,7 +140,9 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="4ov-ye-AyO"/>
+                                    <constraint firstAttribute="height" constant="100" id="4ov-ye-AyO">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                    </constraint>
                                     <constraint firstAttribute="height" constant="50" id="nY3-q3-GVT"/>
                                 </constraints>
                                 <variation key="default">
@@ -166,7 +168,7 @@
                             <constraint firstItem="NdT-0W-PS7" firstAttribute="top" secondItem="2ar-gY-85k" secondAttribute="top" constant="15" id="fST-go-Q38"/>
                             <constraint firstItem="2ar-gY-85k" firstAttribute="trailing" secondItem="SC0-5b-fXk" secondAttribute="trailing" constant="20" id="hbn-e8-WrH"/>
                             <constraint firstItem="2ar-gY-85k" firstAttribute="trailing" secondItem="NdT-0W-PS7" secondAttribute="trailing" constant="15" id="laE-zT-16U"/>
-                            <constraint firstItem="NdT-0W-PS7" firstAttribute="height" secondItem="7Wg-53-xDf" secondAttribute="height" multiplier="0.25" id="oDr-vz-nAd"/>
+                            <constraint firstItem="NdT-0W-PS7" firstAttribute="height" secondItem="7Wg-53-xDf" secondAttribute="height" multiplier="0.4" id="oDr-vz-nAd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2ar-gY-85k"/>
                         <variation key="default">
@@ -196,11 +198,11 @@
             <objects>
                 <viewController title="Signing" id="d8K-EM-Sud" customClass="SigningViewController" customModule="EtheriumDemo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TNF-xY-3gZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7RW-qk-xrP" userLabel="Message">
-                                <rect key="frame" x="20" y="128" width="374" height="40"/>
+                                <rect key="frame" x="64" y="84" width="768" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="T4b-pq-Dpa"/>
@@ -209,7 +211,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartInsertDeleteType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J94-L6-uvg">
-                                <rect key="frame" x="20" y="208" width="374" height="50"/>
+                                <rect key="frame" x="64" y="164" width="768" height="50"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="MhM-Eb-HBA"/>
@@ -255,23 +257,23 @@
             <objects>
                 <viewController id="Ced-Z0-HvV" customClass="SignatureViewController" customModule="EtheriumDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oHX-mu-WWR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="je2-SQ-ceM">
-                                <rect key="frame" x="20" y="88" width="374" height="537.5"/>
+                                <rect key="frame" x="64" y="54" width="768" height="248.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message: -" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yj0-Os-oca">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="161.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="376.5" height="248.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSP-Qe-JT5">
-                                        <rect key="frame" x="0.0" y="176.5" width="374" height="361"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSP-Qe-JT5">
+                                        <rect key="frame" x="391.5" y="0.0" width="376.5" height="248.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hx4-dh-JB4">
-                                                <rect key="frame" x="62" y="55.5" width="250" height="250"/>
+                                                <rect key="frame" x="63.5" y="-1" width="250" height="250"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="250" id="LSo-jq-feo">
                                                         <variation key="heightClass=compact-widthClass=compact" constant="200"/>
@@ -297,7 +299,11 @@
                                         <exclude reference="B8g-Zz-jmH"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal">
+                                    <mask key="constraints">
+                                        <exclude reference="B8g-Zz-jmH"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -305,13 +311,22 @@
                             <constraint firstItem="je2-SQ-ceM" firstAttribute="height" secondItem="oHX-mu-WWR" secondAttribute="height" multiplier="0.6" id="Cde-nH-whY"/>
                             <constraint firstItem="je2-SQ-ceM" firstAttribute="leading" secondItem="WsA-yx-wxV" secondAttribute="leading" constant="20" id="If0-MB-TrW"/>
                             <constraint firstItem="WsA-yx-wxV" firstAttribute="trailing" secondItem="je2-SQ-ceM" secondAttribute="trailing" constant="20" id="K6F-ih-bqK"/>
+                            <constraint firstItem="je2-SQ-ceM" firstAttribute="height" secondItem="oHX-mu-WWR" secondAttribute="height" multiplier="0.6" id="Ob5-Dg-YO1"/>
                             <constraint firstItem="je2-SQ-ceM" firstAttribute="centerX" secondItem="oHX-mu-WWR" secondAttribute="centerX" id="ehu-VM-Vrd"/>
-                            <constraint firstItem="je2-SQ-ceM" firstAttribute="top" secondItem="WsA-yx-wxV" secondAttribute="top" id="iah-J8-hyC"/>
+                            <constraint firstItem="je2-SQ-ceM" firstAttribute="top" secondItem="WsA-yx-wxV" secondAttribute="top" id="iah-J8-hyC">
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WsA-yx-wxV"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ob5-Dg-YO1"/>
+                            </mask>
+                        </variation>
                         <variation key="heightClass=compact-widthClass=compact">
                             <mask key="constraints">
                                 <exclude reference="Cde-nH-whY"/>
+                                <include reference="Ob5-Dg-YO1"/>
                             </mask>
                         </variation>
                     </view>
@@ -330,11 +345,11 @@
             <objects>
                 <viewController title="Verification" id="jWT-jP-mC3" customClass="VerficationViewController" customModule="EtheriumDemo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Agz-e5-xiR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3b-Ic-0Fc" userLabel="Message">
-                                <rect key="frame" x="20" y="128" width="374" height="40"/>
+                                <rect key="frame" x="64" y="84" width="768" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="tm2-fJ-Zwk"/>
@@ -343,7 +358,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartInsertDeleteType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDB-H8-bK7">
-                                <rect key="frame" x="20" y="208" width="374" height="50"/>
+                                <rect key="frame" x="64" y="164" width="768" height="50"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="iaz-QR-0HQ"/>
@@ -365,11 +380,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="WDB-H8-bK7" firstAttribute="leading" secondItem="Agz-e5-xiR" secondAttribute="leading" constant="20" id="34l-UP-V6l"/>
+                            <constraint firstItem="WDB-H8-bK7" firstAttribute="leading" secondItem="kO8-84-2nz" secondAttribute="leading" constant="20" id="34l-UP-V6l"/>
                             <constraint firstItem="e3b-Ic-0Fc" firstAttribute="top" secondItem="kO8-84-2nz" secondAttribute="top" constant="40" id="9ML-lA-eJh"/>
                             <constraint firstItem="kO8-84-2nz" firstAttribute="trailing" secondItem="WDB-H8-bK7" secondAttribute="trailing" constant="20" id="R0d-4i-U7k"/>
                             <constraint firstItem="kO8-84-2nz" firstAttribute="trailing" secondItem="e3b-Ic-0Fc" secondAttribute="trailing" constant="20" id="cg5-np-SnD"/>
-                            <constraint firstItem="e3b-Ic-0Fc" firstAttribute="leading" secondItem="Agz-e5-xiR" secondAttribute="leading" constant="20" id="rb2-ao-DYN"/>
+                            <constraint firstItem="e3b-Ic-0Fc" firstAttribute="leading" secondItem="kO8-84-2nz" secondAttribute="leading" constant="20" id="rb2-ao-DYN"/>
                             <constraint firstItem="WDB-H8-bK7" firstAttribute="top" secondItem="e3b-Ic-0Fc" secondAttribute="bottom" constant="40" id="sLp-uH-Jg3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kO8-84-2nz"/>
@@ -389,7 +404,7 @@
             <objects>
                 <viewController id="0GS-7K-095" customClass="QRScanViewController" customModule="EtheriumDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3HE-fk-lcA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kwu-si-cAI"/>
@@ -406,7 +421,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jze-Vh-qkF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gbU-Mk-6F7">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

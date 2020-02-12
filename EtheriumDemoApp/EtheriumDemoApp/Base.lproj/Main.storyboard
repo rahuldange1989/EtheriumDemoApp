@@ -17,6 +17,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Private key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1vV-le-afY">
                                 <rect key="frame" x="20" y="128" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="33o-y4-eaL"/>
                                 </constraints>
@@ -24,7 +25,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartInsertDeleteType="no"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1vV-le-afY" secondAttribute="trailing" constant="20" id="G6C-zK-c3d"/>
                             <constraint firstItem="1vV-le-afY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Kp7-YW-jD5"/>
@@ -156,7 +157,7 @@
                                 </variation>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SC0-5b-fXk" firstAttribute="top" secondItem="NdT-0W-PS7" secondAttribute="bottom" constant="40" id="2Ib-PG-SjY"/>
                             <constraint firstItem="NdT-0W-PS7" firstAttribute="height" secondItem="7Wg-53-xDf" secondAttribute="height" multiplier="0.5" id="86g-98-Rdx"/>
@@ -200,6 +201,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7RW-qk-xrP" userLabel="Message">
                                 <rect key="frame" x="20" y="128" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="T4b-pq-Dpa"/>
                                 </constraints>
@@ -227,7 +229,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7RW-qk-xrP" firstAttribute="leading" secondItem="0vX-kv-uSn" secondAttribute="leading" constant="20" id="290-DZ-MnC"/>
                             <constraint firstItem="0vX-kv-uSn" firstAttribute="trailing" secondItem="J94-L6-uvg" secondAttribute="trailing" constant="20" id="5Id-aQ-Kyh"/>
@@ -298,7 +300,7 @@
                                 <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="je2-SQ-ceM" firstAttribute="height" secondItem="oHX-mu-WWR" secondAttribute="height" multiplier="0.6" id="Cde-nH-whY"/>
                             <constraint firstItem="je2-SQ-ceM" firstAttribute="leading" secondItem="WsA-yx-wxV" secondAttribute="leading" constant="20" id="If0-MB-TrW"/>
@@ -330,14 +332,73 @@
                     <view key="view" contentMode="scaleToFill" id="Agz-e5-xiR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3b-Ic-0Fc" userLabel="Message">
+                                <rect key="frame" x="20" y="128" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tm2-fJ-Zwk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartInsertDeleteType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDB-H8-bK7">
+                                <rect key="frame" x="20" y="208" width="374" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="iaz-QR-0HQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Verify message">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="0GS-7K-095" kind="show" identifier="showVerifyScanQR" id="M6d-qO-bMI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WDB-H8-bK7" firstAttribute="leading" secondItem="Agz-e5-xiR" secondAttribute="leading" constant="20" id="34l-UP-V6l"/>
+                            <constraint firstItem="e3b-Ic-0Fc" firstAttribute="top" secondItem="kO8-84-2nz" secondAttribute="top" constant="40" id="9ML-lA-eJh"/>
+                            <constraint firstItem="kO8-84-2nz" firstAttribute="trailing" secondItem="WDB-H8-bK7" secondAttribute="trailing" constant="20" id="R0d-4i-U7k"/>
+                            <constraint firstItem="kO8-84-2nz" firstAttribute="trailing" secondItem="e3b-Ic-0Fc" secondAttribute="trailing" constant="20" id="cg5-np-SnD"/>
+                            <constraint firstItem="e3b-Ic-0Fc" firstAttribute="leading" secondItem="Agz-e5-xiR" secondAttribute="leading" constant="20" id="rb2-ao-DYN"/>
+                            <constraint firstItem="WDB-H8-bK7" firstAttribute="top" secondItem="e3b-Ic-0Fc" secondAttribute="bottom" constant="40" id="sLp-uH-Jg3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kO8-84-2nz"/>
                     </view>
                     <navigationItem key="navigationItem" title="Verification" id="5s8-vT-Tcl"/>
+                    <connections>
+                        <outlet property="messageTextField" destination="e3b-Ic-0Fc" id="ULs-sB-21v"/>
+                        <outlet property="verifyMsgBtn" destination="WDB-H8-bK7" id="cQN-mc-EiP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snf-Qn-WEI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1706" y="838"/>
+        </scene>
+        <!--QR Code Scanner-->
+        <scene sceneID="Bc7-U9-HQN">
+            <objects>
+                <viewController id="0GS-7K-095" customClass="QRScanViewController" customModule="EtheriumDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3HE-fk-lcA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kwu-si-cAI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="QR Code Scanner" id="vSE-pH-4le"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TzR-9y-6GR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2467" y="838"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7KK-7X-CDA">
